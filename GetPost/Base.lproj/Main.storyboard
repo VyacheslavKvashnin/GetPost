@@ -16,28 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="seQ-ib-Q1D">
-                                <rect key="frame" x="87" y="433" width="253" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcr-HG-3VY">
-                                        <rect key="frame" x="0.0" y="0.0" width="61" height="40"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="GET"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp1-UK-KfA">
-                                        <rect key="frame" x="192" y="0.0" width="61" height="40"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="POST"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-Cv-Lbj">
+                                <rect key="frame" x="181.5" y="567" width="51.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET"/>
+                                <connections>
+                                    <action selector="ddddd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNG-pT-ctY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zws-jX-kTF">
+                                <rect key="frame" x="176.5" y="313" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POST"/>
+                                <connections>
+                                    <action selector="postTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uP3-BK-mvJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="seQ-ib-Q1D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="I0c-ox-ZUp"/>
-                            <constraint firstItem="seQ-ib-Q1D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="Isd-zb-dCb"/>
-                            <constraint firstItem="seQ-ib-Q1D" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="n47-6s-faQ"/>
+                            <constraint firstItem="zws-jX-kTF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="269" id="QbW-a8-WrA"/>
+                            <constraint firstItem="zws-jX-kTF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UG8-Jd-adK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KuK-Cv-Lbj" secondAttribute="bottom" constant="264" id="Ya0-Ph-nyI"/>
+                            <constraint firstItem="KuK-Cv-Lbj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iba-1t-tEM"/>
                         </constraints>
                     </view>
                 </viewController>
